@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 90px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logop {
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 2.5rem;
+     
+  }
+  .dot{
+    color: #f16821;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  margin: 20px;
+  transition: .3s all ease;
+}
+li:hover{
+    color: #f16821;
+}

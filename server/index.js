@@ -22,7 +22,7 @@ app.get("/api/products",async(req,res)=>{
     if(products.length>0){
         res.send(products)
     }else{
-        res("Data not found")
+        res.send("Data not found")
     }
 })
 app.get("/api/products/:id",async(req,res)=>{
@@ -31,7 +31,7 @@ app.get("/api/products/:id",async(req,res)=>{
     if(findedProduct){
         res.send(findedProduct)
     }else{
-        res("Data not found")
+        res.send("Data not found")
     }
 })
 app.delete("/api/products/:id",async(req,res)=>{
@@ -40,7 +40,7 @@ app.delete("/api/products/:id",async(req,res)=>{
     if(deletetedProduct){
         res.send(deletetedProduct)
     }else{
-        res("Data not found")
+        res.send("Data not found")
     }
 })
 app.post("/api/products",async(req,res)=>{
@@ -71,4 +71,4 @@ app.listen(port, () => {
 })
 
 mongoose.connect(process.env.DB_CONNETCION_KEY.replace("<password>",process.env.DB_PASSWORD))
-.then(() => console.log('Connected!'));
+.then(() => console.log('Mongo hazirdir!'));
